@@ -29,7 +29,7 @@
 - 内置 **whisper.cpp v1.9.4**，录音结束自动转写；**不申请 INTERNET 权限**，录音和文字没有任何路径离开这台设备
 - 纯 CPU 离线推理：边录边重采样成 16 kHz 单声道落盘，转写按段流式读取，**录一小时内存也不涨**
 - 支持导入已有音频（m4a / mp3 / wav / ogg）、中/英/自动检测与翻译、历史记录、模型导入管理
-- 零第三方依赖，APK 约 **1.7 MB**
+- 零第三方依赖；APK 约 **59 MB**（内含 57 MB 的 base 模型，**装完即用**，不用自己下模型）
 
 ### 🌐 [iceBrowser](https://github.com/ice-wocker/iceBrowser) — Android 浏览器
 
@@ -72,7 +72,7 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 | 项目 | 一句话 | 技术栈 |
 | --- | --- | --- |
-| **[iceScribe](https://github.com/ice-wocker/iceScribe)** | 离线语音转写：内置 whisper.cpp，零 INTERNET 权限，边录边转、常数级内存 | Java |
+| **[iceScribe](https://github.com/ice-wocker/iceScribe)** | 离线语音转写：内置 whisper.cpp + base 模型开箱即用，零 INTERNET 权限，边录边转、常数级内存 | Java |
 | **[ModelScopeBrowser](https://github.com/ice-wocker/ModelScopeBrowser)** | 魔搭模型库：浏览全部大模型 + 下载 GGUF + 内置 llama.cpp 离线对话，带能调用终端/联网的智能体 | Java |
 | **[iceLLM](https://github.com/ice-wocker/iceLLM)** | 一行命令把安卓手机变成 OpenAI 兼容的本地 AI 服务器（WebUI + API，完全离线） | Shell |
 | **[iceProxy](https://github.com/ice-wocker/iceProxy)** | 免费模型的 OpenAI 协议代理（Cloudflare Workers，多账号轮换 + 多 provider 兜底） | JavaScript |
