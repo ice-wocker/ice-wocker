@@ -7,8 +7,8 @@
 **零依赖 · 单文件 · 极小体积 · 把 AI 塞进手机**
 
 [![关注](https://img.shields.io/github/followers/ice-wocker?label=%E5%85%B3%E6%B3%A8&color=FF5A2D)](https://github.com/ice-wocker?tab=followers)
-[![开源项目](https://img.shields.io/badge/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE-10-4B5563)](#-全部项目)
-[![Java](https://img.shields.io/badge/Java-6%20%E4%B8%AA%E9%A1%B9%E7%9B%AE-007396?logo=openjdk&logoColor=white)](#-全部项目)
+[![开源项目](https://img.shields.io/badge/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE-11-4B5563)](#-全部项目)
+[![Java](https://img.shields.io/badge/Java-7%20%E4%B8%AA%E9%A1%B9%E7%9B%AE-007396?logo=openjdk&logoColor=white)](#-全部项目)
 [![关键词](https://img.shields.io/badge/%E5%85%B3%E9%94%AE%E8%AF%8D-%E9%9B%B6%E4%BE%9D%E8%B5%96%20%C2%B7%20%E7%A6%BB%E7%BA%BF%20%C2%B7%20%E6%9E%81%E5%B0%8F%E4%BD%93%E7%A7%AF-8B5CF6)](#-我在意的几件事)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20GPL--3.0-3DA639)](https://github.com/ice-wocker?tab=repositories)
 
@@ -20,9 +20,16 @@
 
 主力写 Android（纯 Java、单 dex、能不引依赖就不引），需要的时候也写 Cloudflare Workers（JavaScript）和 Shell。判断一个项目做得行不行，我习惯先看三件事：**安装包多大、有几个第三方依赖、断网还能不能用**。
 
-这个账号 2026 年 8 月底开的，一个月里攒下 10 个原创项目，一个 fork 都没有。
+这个账号 2026 年 8 月底开的，一个月里攒下 11 个原创项目，一个 fork 都没有。
 
 ## 🛠️ 代表作
+
+### 🎙️ [iceScribe](https://github.com/ice-wocker/iceScribe) — 把手机变成一支离线录音笔
+
+- 内置 **whisper.cpp v1.9.4**，录音结束自动转写；**不申请 INTERNET 权限**，录音和文字没有任何路径离开这台设备
+- 纯 CPU 离线推理：边录边重采样成 16 kHz 单声道落盘，转写按段流式读取，**录一小时内存也不涨**
+- 支持导入已有音频（m4a / mp3 / wav / ogg）、中/英/自动检测与翻译、历史记录、模型导入管理
+- 零第三方依赖，APK 约 **1.7 MB**
 
 ### 🌐 [iceBrowser](https://github.com/ice-wocker/iceBrowser) — Android 浏览器
 
@@ -65,6 +72,7 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 | 项目 | 一句话 | 技术栈 |
 | --- | --- | --- |
+| **[iceScribe](https://github.com/ice-wocker/iceScribe)** | 离线语音转写：内置 whisper.cpp，零 INTERNET 权限，边录边转、常数级内存 | Java |
 | **[ModelScopeBrowser](https://github.com/ice-wocker/ModelScopeBrowser)** | 魔搭模型库：浏览全部大模型 + 下载 GGUF + 内置 llama.cpp 离线对话，带能调用终端/联网的智能体 | Java |
 | **[iceLLM](https://github.com/ice-wocker/iceLLM)** | 一行命令把安卓手机变成 OpenAI 兼容的本地 AI 服务器（WebUI + API，完全离线） | Shell |
 | **[iceProxy](https://github.com/ice-wocker/iceProxy)** | 免费模型的 OpenAI 协议代理（Cloudflare Workers，多账号轮换 + 多 provider 兜底） | JavaScript |
@@ -88,8 +96,8 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 | 项 | 值 |
 | --- | --- |
-| 公开仓库 | **10** 个，全部原创（0 fork） |
-| 语言 | Java ×6 · JavaScript ×1 · Shell ×1 · 纯文档 ×2 |
+| 公开仓库 | **11** 个，全部原创（0 fork） |
+| 语言 | Java ×7 · JavaScript ×1 · Shell ×1 · 纯文档 ×2 |
 | 协议 | MIT ×4 · GPL-3.0 ×1 · 其余未标注 |
 | 最小安装包 | **81 KB**（iceBrowser） |
 
