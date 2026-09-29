@@ -39,7 +39,7 @@
 
 ### 🌐 [iceBrowser](https://github.com/ice-wocker/iceBrowser) — Android 浏览器
 
-- 纯 Java / 单 dex / **0 第三方依赖**，APK **81 KB**（同类普遍 30 MB 以上）
+- 纯 Java / 单 dex / **0 第三方依赖**，APK **164 KB**（同类普遍 30 MB 以上）
 - 真正的多 Tab，4 个搜索引擎可切换，内置广告拦截 / 阅读模式 / 无痕模式
 - `MIT`
 
@@ -64,14 +64,14 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 ### ⚫ [KayaGo](https://github.com/ice-wocker/KayaGo) — 开源 Android 围棋
 
 - 内置**从零手写的蒙特卡洛树搜索（MCTS）AI**：不联网、不加载任何权重文件，装上就能下
-- 零第三方依赖，APK **约 70 KB**；9 / 13 / 19 路棋盘，5 档棋力（约 0.6 秒 ~ 17 秒每手）
+- 零第三方依赖，APK **69 KB**；9 / 13 / 19 路棋盘，5 档棋力（约 0.6 秒 ~ 17 秒每手）
 - 项目名取自榧木（kaya）——传统日本棋盘的用材
 - `GPL-3.0`
 
 ### 🔌 [iceProxy](https://github.com/ice-wocker/iceProxy) — 免费模型的 OpenAI 协议代理
 
 - 一个 Cloudflare Worker 单文件，把一个入口变成 OpenAI 兼容 API，Cline / Cursor / ChatBox 填上地址就能用
-- 覆盖 Qwen3-Max · GLM-5.3 · DeepSeek-V4 · GPT-OSS-120B · Llama-4 · Kimi-K3
+- 覆盖 Qwen3-Coder-Plus/Flash · Qwen-Vision · Gemini-2.0/1.5-Flash · GLM-4.5-Flash · Cerebras-Qwen3-32B · OpenRouter，共 8 个模型 / 5 个 provider
 - 多账号轮换 + 多 provider 兜底，免费额度也能稳定跑
 
 ## 📦 全部项目
@@ -82,10 +82,10 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 | **[iceScribe](https://github.com/ice-wocker/iceScribe)** | 离线语音转写：内置 whisper.cpp，零 INTERNET 权限，边录边转、常数级内存 | Java |
 | **[ModelScopeBrowser](https://github.com/ice-wocker/ModelScopeBrowser)** | 魔搭模型库：浏览全部大模型 + 下载 GGUF + 内置 llama.cpp 离线对话，带能调用终端/联网的智能体 | Java |
 | **[iceLLM](https://github.com/ice-wocker/iceLLM)** | 一行命令把安卓手机变成 OpenAI 兼容的本地 AI 服务器（WebUI + API，完全离线） | Shell |
-| **[iceProxy](https://github.com/ice-wocker/iceProxy)** | 免费模型的 OpenAI 协议代理（Cloudflare Workers，多账号轮换 + 多 provider 兜底） | JavaScript |
-| **[iceBrowser](https://github.com/ice-wocker/iceBrowser)** | 纯 Java 浏览器：0 依赖、81 KB APK、真多 Tab、4 引擎、广告拦截、阅读模式 | Java |
+| **[iceProxy](https://github.com/ice-wocker/iceProxy)** | 免费模型的 OpenAI 协议代理（Cloudflare Workers，8 模型 / 5 provider，多账号轮换 + 兜底） | JavaScript |
+| **[iceBrowser](https://github.com/ice-wocker/iceBrowser)** | 纯 Java 浏览器：0 依赖、164 KB APK、真多 Tab、4 引擎、广告拦截、阅读模式 | Java |
 | **[iceReading](https://github.com/ice-wocker/iceReading)** | 纯 Java EPUB 阅读器：0 依赖、不到 100 KB、OPDS 发现、4 主题，零云同步 / 追踪 / 广告 | Java |
-| **[KayaGo](https://github.com/ice-wocker/KayaGo)** | 开源 Android 围棋：从零手写 MCTS AI，零依赖、约 70 KB，9/13/19 路 5 档棋力 | Java |
+| **[KayaGo](https://github.com/ice-wocker/KayaGo)** | 开源 Android 围棋：从零手写 MCTS AI，零依赖、69 KB，9/13/19 路 5 档棋力 | Java |
 | **[MusicFusion](https://github.com/ice-wocker/MusicFusion)** | 聚合音乐播放器：900 万+ 合法曲目 + 2945 个电台，四源聚合、全离线缓存 | Java |
 | **[MusicFusionAI](https://github.com/ice-wocker/MusicFusionAI)** | MusicFusion v14 的 AI 增强模块：端侧 LLM + 5 大 AI 任务 + 歌词翻译 + Android Auto / Wear OS | Java |
 | **[frontier-knowledge-base](https://github.com/ice-wocker/frontier-knowledge-base)** | 前沿科技知识库：九大领域百余篇专题文档，事实性内容逐条附来源链接 | Markdown |
@@ -93,7 +93,7 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 ## 🧭 我在意的几件事
 
-- **体积**：81 KB 的浏览器、不到 100 KB 的阅读器、约 70 KB 的围棋 AI。塞得进手机，也塞得进缓存
+- **体积**：164 KB 的浏览器、97 KB 的阅读器、69 KB 的围棋 AI。塞得进手机，也塞得进缓存
 - **依赖**：能自己写就不引库。少一个依赖，少一次供应链风险，也少几十 MB
 - **离线优先**：模型推理、看书、下棋、听歌、扫描都不依赖云端；不强制登录，不追踪，不塞广告
 - **权限克制**：用不到的权限一个都不要——扫描 App 和录音笔的权限列表可以做到"空"或"只有一个麦克风"
@@ -105,9 +105,14 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 | 项 | 值 |
 | --- | --- |
 | 公开仓库 | **12** 个，全部原创（0 fork） |
-| 语言 | Java ×8 · JavaScript ×1 · Shell ×1 · 纯文档 ×2 |
+| 语言 | Java ×8 · JavaScript ×1 · Shell ×1 · 纯文档 ×1 · 账号级配置 ×1 |
 | 协议 | MIT 为主 · KayaGo 为 GPL-3.0 |
-| 最小安装包 | **81 KB**（iceBrowser） |
+| 最小安装包 | **69 KB**（KayaGo） |
+| 有 Release 可直接下载 | **8** 个 |
+| 有 CI | **11** 个（除本主页仓库）|
+
+> 每个项目 README 里的体积/依赖数都以**实际构建出的包**为准，
+> 不是估算值。体积声明与实际不符的会当场改掉。
 
 ## 🤝 找到我
 
