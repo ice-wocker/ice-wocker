@@ -113,12 +113,12 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 | 项 | 值 |
 | --- | --- |
-| 公开仓库 | **13** 个，全部原创（0 fork） |
-| 语言 | Java ×9 · JavaScript ×1 · Shell ×1 · 纯文档 ×1 · 账号级配置 ×1 |
+| 公开仓库 | **16** 个，全部原创（0 fork） |
+| 语言 | Java ×9 · Python ×3 · JavaScript ×1 · Shell ×1 · 纯文档 ×1 · 账号级配置 ×1 |
 | 协议 | MIT 为主 · KayaGo 为 GPL-3.0 |
 | 最小安装包 | **69 KB**（KayaGo） |
 | 有 Release 可直接下载 | **9** 个 |
-| 有 CI | **12** 个（除本主页仓库）|
+| 有 CI | **14** 个（除本主页仓库与 .github 账号级配置仓库）|
 
 > 每个项目 README 里的体积/依赖数都以**实际构建出的包**为准，
 > 不是估算值。体积声明与实际不符的会当场改掉。
