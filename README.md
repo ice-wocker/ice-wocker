@@ -68,6 +68,14 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 - 项目名取自榧木（kaya）——传统日本棋盘的用材
 - `GPL-3.0`
 
+### 🎯 [GunFire](https://github.com/ice-wocker/GunFire) — 623 KB 的安卓枪战游戏
+
+- 纯 Java + **OpenGL ES 2.0 手写渲染**，Unity / Godot / libGDX 一个都没引，渲染层只有 5 个类约 500 行
+- **零素材文件**：没贴图、没模型、没音频，世界全是程序生成的几何体（立方体 + 圆柱），单方向光 Lambert
+- Release APK **623 KB**，**零权限**——不是「承诺不上传」，是技术上没有权限可用
+- `GameWorld` 里一个 `android.*` 都没 import，27 个单测在普通 JVM 上毫秒级跑完；写测试时抓出 5 个「编译过但根本没法玩」的真 bug（靶子被立柱挡住、散布角比目标张角还大、`yaw` 符号写反导致倒退）
+- `MIT` · [⬇️ 直接下载 APK](https://github.com/ice-wocker/GunFire/releases/latest/download/app-release.apk)
+
 ### 🔌 [iceProxy](https://github.com/ice-wocker/iceProxy) — 免费模型的 OpenAI 协议代理
 
 - 一个 Cloudflare Worker 单文件，把一个入口变成 OpenAI 兼容 API，Cline / Cursor / ChatBox 填上地址就能用
@@ -86,6 +94,7 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 | **[iceBrowser](https://github.com/ice-wocker/iceBrowser)** | 纯 Java 浏览器：0 依赖、164 KB APK、真多 Tab、4 引擎、广告拦截、阅读模式 | Java |
 | **[iceReading](https://github.com/ice-wocker/iceReading)** | 纯 Java EPUB 阅读器：0 依赖、不到 100 KB、OPDS 发现、4 主题，零云同步 / 追踪 / 广告 | Java |
 | **[KayaGo](https://github.com/ice-wocker/KayaGo)** | 开源 Android 围棋：从零手写 MCTS AI，零依赖、69 KB，9/13/19 路 5 档棋力 | Java |
+| **[GunFire](https://github.com/ice-wocker/GunFire)** | 安卓枪战游戏：OpenGL ES 2.0 手写渲染、零素材、零权限、623 KB，27 个单测在 JVM 上跑 | Java |
 | **[MusicFusion](https://github.com/ice-wocker/MusicFusion)** | 聚合音乐播放器：900 万+ 合法曲目 + 2945 个电台，四源聚合、全离线缓存 | Java |
 | **[MusicFusionAI](https://github.com/ice-wocker/MusicFusionAI)** | MusicFusion v14 的 AI 增强模块：端侧 LLM + 5 大 AI 任务 + 歌词翻译 + Android Auto / Wear OS | Java |
 | **[frontier-knowledge-base](https://github.com/ice-wocker/frontier-knowledge-base)** | 前沿科技知识库：九大领域百余篇专题文档，事实性内容逐条附来源链接 | Markdown |
@@ -93,7 +102,7 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 ## 🧭 我在意的几件事
 
-- **体积**：164 KB 的浏览器、97 KB 的阅读器、69 KB 的围棋 AI。塞得进手机，也塞得进缓存
+- **体积**：164 KB 的浏览器、97 KB 的阅读器、69 KB 的围棋 AI、623 KB 的 3D 游戏。塞得进手机，也塞得进缓存
 - **依赖**：能自己写就不引库。少一个依赖，少一次供应链风险，也少几十 MB
 - **离线优先**：模型推理、看书、下棋、听歌、扫描都不依赖云端；不强制登录，不追踪，不塞广告
 - **权限克制**：用不到的权限一个都不要——扫描 App 和录音笔的权限列表可以做到"空"或"只有一个麦克风"
@@ -104,12 +113,12 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 
 | 项 | 值 |
 | --- | --- |
-| 公开仓库 | **12** 个，全部原创（0 fork） |
-| 语言 | Java ×8 · JavaScript ×1 · Shell ×1 · 纯文档 ×1 · 账号级配置 ×1 |
+| 公开仓库 | **13** 个，全部原创（0 fork） |
+| 语言 | Java ×9 · JavaScript ×1 · Shell ×1 · 纯文档 ×1 · 账号级配置 ×1 |
 | 协议 | MIT 为主 · KayaGo 为 GPL-3.0 |
 | 最小安装包 | **69 KB**（KayaGo） |
-| 有 Release 可直接下载 | **8** 个 |
-| 有 CI | **11** 个（除本主页仓库）|
+| 有 Release 可直接下载 | **9** 个 |
+| 有 CI | **12** 个（除本主页仓库）|
 
 > 每个项目 README 里的体积/依赖数都以**实际构建出的包**为准，
 > 不是估算值。体积声明与实际不符的会当场改掉。
