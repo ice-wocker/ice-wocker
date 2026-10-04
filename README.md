@@ -123,6 +123,25 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 - 覆盖 Qwen / Gemini / GLM 等多个免费模型与多个 provider
 - 多账号轮换 + 多 provider 兜底，免费额度也能稳定跑
 
+### 📱 [droid-mcp](https://github.com/ice-wocker/droid-mcp) — 手机变 MCP 工具
+
+中文：安卓手机变成 MCP 工具：47 个工具（短信/电话/剪贴板/相机/传感器/文件），三后端，单文件零依赖，另有 companion APK。
+
+*English: Your Android phone as MCP tools — 47 tools over 3 backends in one dependency-free file, plus a companion APK.*
+
+- 读短信验证码、发通知、读写剪贴板、拍照录音、读传感器，AI 直接动手
+- 三后端：Termux（47/47）、companion APK（不用装 Termux）、mock（没手机可玩）
+- 网页管家 + 官方 Skill + 47×3 兼容矩阵
+
+### 🧪 [spark-distill-1b](https://github.com/ice-wocker/spark-distill-1b) — 把大模型蒸进 1B
+
+中文：Muse Spark 风格蒸馏进 MiniCPM5-1B：200 条种子数据 + Kaggle 免费卡 QLoRA 管线，转 GGUF 跑手机。
+
+*English: Distilling Muse Spark style into MiniCPM5-1B — 200 seed pairs plus a free-GPU QLoRA pipeline, exported to GGUF for phones.*
+
+- Unsloth QLoRA，T4 免费卡半小时跑完；纯 transformers 兜底脚本
+- 评测脚本 + LoRA 合并 + GGUF 导出，直通 Termux llama.cpp
+
 ## 📦 全部项目
 
 十多个原创项目，完整列表见 [Repositories](https://github.com/ice-wocker?tab=repositories)。下面是常用入口：
@@ -141,6 +160,8 @@ curl -fsSL https://raw.githubusercontent.com/ice-wocker/iceLLM/main/ice-llm.sh |
 | **[MusicFusion](https://github.com/ice-wocker/MusicFusion)** | 聚合音乐播放器：多源聚合、全离线缓存 | Java |
 | **[MusicFusionAI](https://github.com/ice-wocker/MusicFusionAI)** | MusicFusion 的 AI 增强模块：端侧 LLM + AI 任务 + 歌词翻译 + Android Auto / Wear OS | Java |
 | **[frontier-knowledge-base](https://github.com/ice-wocker/frontier-knowledge-base)** | 前沿科技知识库：多领域专题文档，事实性内容逐条附来源链接 | Markdown |
+| **[droid-mcp](https://github.com/ice-wocker/droid-mcp)** | 手机变 MCP 工具：47 个工具三后端，单文件零依赖 + companion APK | Python |
+| **[spark-distill-1b](https://github.com/ice-wocker/spark-distill-1b)** | 大模型蒸进 1B：200 条种子 + 免费卡 QLoRA 管线，转 GGUF 上手机 | Python |
 | **[ice-wocker](https://github.com/ice-wocker/ice-wocker)** | 就是你现在看的这个仓库——个人主页 | — |
 
 ## 🧭 我在意的几件事
